@@ -1,0 +1,21 @@
+@startuml
+actor Traveler
+participant "UI" as UI
+participant "PlannerService" as PS
+participant "Router" as RT
+participant "Itinerary" as IT
+
+Traveler -> UI: Lock POI/Hotel/Restaurant
+Traveler -> UI: Click Regenerate
+UI -> PS: regenerate(itinId, locks)
+PS -> RT: route(existingDayPlans, locks)
+alt feasible
+  RT --> PS: newOrderedDays
+  PS -> IT: updateDays(newOrderedDays)
+  PS --> UI: Show updated plan (locks kept)
+else infeasible
+  RT --> PS: conflict
+  PS --> UI: Explain conflict (add day/remove locks)
+end
+@enduml
+

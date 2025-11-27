@@ -1,0 +1,8 @@
+{
+  "id": "itin_001",
+  "city": "Pittsburgh",
+  "hotel_id": "h1",
+  "day_ids": ["d1", "d2", "d3"],
+  "warnings": []
+}
+

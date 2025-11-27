@@ -1,0 +1,11 @@
+id,name,lat,lon,rating,review_count,price_level
+h1,DoubleTree by Hilton Hotel & Suites Pittsburgh Downtown,40.4408,-79.9941,4,2823,$
+h2,Fairmont Pittsburgh,40.4419,-80.0017,4.3,1334,$$
+h3,"The Oaklander Hotel, Autograph Collection",40.4457,-79.9543,4.3,399,$$$
+h4,The Mansions On Fifth Luxury Hotel,40.4484,-79.9383,4.4,473,$$
+h5,SpringHill Suites by Marriott Pittsburgh Bakery Square,40.4578,-79.914,4.2,675,$
+h6,The Ohiopyle Suites,39.87,-79.4912,4.3,95,$$
+h7,DoubleTree by Hilton Hotel Pittsburgh - Cranberry,40.6692,-80.0964,4.4,1725,$
+h8,Pittsburgh Marriott North,40.6855,-80.0898,4.4,1319,$$
+h9,Sheraton Pittsburgh Hotel at Station Square,40.4353,-80.0072,4.1,3361,$$
+h10,Hyatt Place Pittsburgh-North Shore,40.447,-80.0089,4.2,1696,$

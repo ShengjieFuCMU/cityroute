@@ -1,0 +1,5 @@
+==== BACKEND .env.example ====
+MISSING: backend/.env.example
+
+==== FRONTEND .env.example ====
+MISSING: frontend/.env.example

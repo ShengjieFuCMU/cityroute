@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+actor Traveler
+rectangle CityRoute {
+  usecase "UC1 Generate Itinerary" as UC1
+  usecase "UC2 Choose Hotel" as UC2
+  usecase "UC3 Restaurants – Manual" as UC3
+  usecase "UC4 Restaurants – Auto-Pick" as UC4
+  usecase "UC5 Lock & Regenerate" as UC5
+  usecase "UC6 Export Plan" as UC6
+}
+Traveler --> UC1
+Traveler --> UC2
+Traveler --> UC3
+Traveler --> UC4
+Traveler --> UC5
+Traveler --> UC6
+@enduml
+

@@ -1,0 +1,107 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+' ==== Data / domain classes ====
+class Itinerary {
+  id
+  city
+  days
+  hotel
+  warnings
+}
+
+class DayPlan {
+  id
+  visits
+  lunch
+  dinner
+  totalTime
+}
+
+class POI {
+  id
+  name
+  lat
+  lon
+  rating
+  reviewCount
+  mustGo
+}
+
+class Hotel {
+  id
+  name
+  lat
+  lon
+  rating
+  reviewCount
+  priceLevel
+}
+
+class Restaurant {
+  id
+  name
+  lat
+  lon
+  rating
+  reviewCount
+  priceLevel
+  cuisines
+  dietTags
+  openLunch
+  openDinner
+}
+
+class UserPrefs {
+  days
+  travelMode
+  detourLimitMinutes
+  dietTags
+  priceRange
+}
+
+class Lock {
+  type
+  id
+}
+
+' ==== Services ====
+class PlannerService {
+  +generate(prefs, pois, locks?) : Itinerary
+  +suggestHotel(itin, prefs) : Hotel[]
+  +autoPickMeals(itin, dayIds?, prefs) : Itinerary
+  +regenerate(itin, locks) : Itinerary
+  +export(itin, fmt) : File
+}
+
+class Clusterer {
+  +cluster(pois, k) : DayPlan[]
+}
+
+class Router {
+  +route(dayPlans, locks?) : DayPlan[]
+}
+
+class RestaurantFinder {
+  +suggest(dayPlan, prefs) : Restaurant[]
+}
+
+class HotelRanker {
+  +rank(itin, prefs) : Hotel[]
+}
+
+' ==== Relationships ====
+Itinerary "1" o-- "*" DayPlan
+DayPlan "*" o-- "*" POI
+DayPlan "1" o-- "0..1" Restaurant : lunch
+DayPlan "1" o-- "0..1" Restaurant : dinner
+Itinerary "1" o-- "0..1" Hotel
+
+PlannerService ..> Clusterer
+PlannerService ..> Router
+PlannerService ..> RestaurantFinder
+PlannerService ..> HotelRanker
+PlannerService ..> Itinerary
+@enduml
+
+

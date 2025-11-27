@@ -1,0 +1,31 @@
+id,name,lat,lon,rating,review_count,price_level,cuisines,diet_tags,open_lunch,open_dinner
+r1,Roland's Seafood Grill,40.4523,-79.9838,4.3,3641,$$,seafood,pescatarian,11:30-14:00,17:30-20:30
+r2,Maiku Vietnamese Pho,40.4534,-79.9868,4.8,540,$,vietnamese,vegetarian|vegan,11:30-14:00,17:00-18:00
+r3,Union Grill Oakland,40.4449,-79.9485,4.5,1739,$$,american,vegetarian|vegan,12:00-14:00,17:30-20:30
+r4,Shady Grove,40.4511,-79.9334,4.3,1402,$$,american,vegetarian,11:30-14:00,17:30-20:30
+r5,Taiwanese Bistro Cafe 33,40.4378,-79.9191,4.5,1380,$$,taiwanese,vegetarian,11:30-14:00,17:30-20:30
+r6,Sichuan Gourmet,40.4359,-79.9231,4,719,$$,sichuan,vegetarian,11:30-14:00,17:30-20:30
+r7,Everyday Noodles,40.4383,-79.9201,4.6,2168,$,noodle,,11:30-14:00,17:30-20:30
+r8,Bigelow Grille Kitchen & Bar,40.4408,-79.9944,4,358,$$,american|bar,vegetarian,11:30-14:00,17:30-20:30
+r9,Eddie V's Prime Seafood,40.4398,-79.997,4.7,1924,$$$,seafood,vegetarian,,17:30-20:30
+r10,Texas de Brazil - Pittsburgh,40.4343,-80.0053,4.4,3029,$$$,steakhouse,,,17:30-20:30
+r11,Primanti Bros. Restaurant and Bar,40.4449,-79.9576,4.3,1909,$,sandwich,,11:30-14:00,17:30-20:30
+r12,Primanti Bros. Restaurant and Bar,40.6857,-80.1077,4.2,3130,$,sandwich,,11:30-14:00,17:30-20:30
+r13,APTEKA,40.4707,-79.9474,4.7,1724,$$,european,vegetarian|vegan,,17:30-20:30
+r14,The Factory Southshore,40.435,-80.0063,4.1,127,$$,american|bar,,11:30-14:00,17:30-20:30
+r15,Hofbräuhaus Pittsburgh,40.4292,-79.9648,4.4,2191,$$,german,,11:30-14:00,17:30-20:30
+r16,3 Rivers Restaurant and Lounge,40.4517,-80.0016,4,84,$,american|bar,,11:30-14:00,17:30-20:30
+r17,Altius,40.4385,-80.0192,4.7,1905,$$$,american|bar,vegetarian,,17:30-20:30
+r18,Pusadee's Garden,40.4827,-79.9519,4.7,1134,$$$,thai,vegetarian|vegan,,17:30-20:30
+r19,Burgatory,40.4466,-80.0108,4.5,4250,$$,american|bar,vegetarian,11:30-14:00,17:30-20:30
+r20,Noodlehead,40.4579,-79.9254,4.6,3467,$,thai,vegetarian|vegan,12:00-14:00,17:30-20:30
+r21,Roots Natural Kitchen,40.4441,-79.9577,4.7,537,$,american,vegetarian|vegan,11:30-14:00,17:30-20:30
+r22,Piada Italian Street Food,40.4408,-79.9581,4.4,1914,$,italian,vegetarian,11:30-14:00,17:30-20:30
+r23,Chaykhana Pittsburgh,40.4469,-80.0319,4.8,564,$$,uzbeki,vegetarian|vegan|halal,11:30-14:00,17:30-20:30
+r24,Falls City Pub & Restaurant,39.8716,-79.491,4.4,620,$$,american|bar,vegetarian|vegan,,17:30-20:30
+r25,Mad Noodles,40.4289,-79.9769,4,429,$$,chinese,vegetarian|vegan|halal,11:30-14:00,17:30-20:30
+r26,Novo Asian Food Hall,40.452,-79.9851,4.4,479,$$,asian,,11:30-14:00,17:30-20:30
+r27,Pamela's Diner,40.4435,-79.955,4.5,1609,$$,breakfast,,11:30-14:00,
+r28,Fujiya Ramen,40.4506,-79.9352,4.5,1000,$$,japanese,vegetarian,11:30-14:00,17:30-20:30
+r29,The Cheesecake Factory,40.5439,-80.0088,4.2,3370,$$,american|bar,vegetarian|vegan,11:30-14:00,17:30-20:30
+r30,North Park Lounge Cranberry,40.7158,-80.1033,4.3,1575,$,american|bar,,11:30-14:00,17:30-20:30

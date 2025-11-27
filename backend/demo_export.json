@@ -1,0 +1,112 @@
+{
+  "itinerary": {
+    "id": "it-001",
+    "city": "Pittsburgh",
+    "prefs": {
+      "days": 3,
+      "travel_mode": "drive",
+      "detour_limit_minutes": 15,
+      "only_must_go": false,
+      "max_pois_total": 40
+    },
+    "day_ids": [
+      "day1",
+      "day2",
+      "day3"
+    ],
+    "hotel_id": "h4",
+    "warnings": []
+  },
+  "days": [
+    {
+      "id": "day1",
+      "visit_ids": [
+        "poi38",
+        "poi37"
+      ],
+      "lunch_id": "r30",
+      "dinner_id": "r12",
+      "total_time_minutes": 11.7
+    },
+    {
+      "id": "day2",
+      "visit_ids": [
+        "poi6",
+        "poi18",
+        "poi5",
+        "poi28",
+        "poi16",
+        "poi33",
+        "poi20",
+        "poi19",
+        "poi3",
+        "poi31",
+        "poi2",
+        "poi35",
+        "poi29",
+        "poi17",
+        "poi30",
+        "poi32",
+        "poi24",
+        "poi34",
+        "poi23",
+        "poi21",
+        "poi15",
+        "poi1",
+        "poi4",
+        "poi14",
+        "poi13",
+        "poi39",
+        "poi22",
+        "poi36",
+        "poi9",
+        "poi8",
+        "poi7",
+        "poi27",
+        "poi10",
+        "poi11",
+        "poi12"
+      ],
+      "lunch_id": "r23",
+      "dinner_id": "r17",
+      "total_time_minutes": 211.4
+    },
+    {
+      "id": "day3",
+      "visit_ids": [
+        "poi26",
+        "poi25"
+      ],
+      "lunch_id": "r5",
+      "dinner_id": "r24",
+      "total_time_minutes": 11.1
+    }
+  ],
+  "meals": {
+    "days": [
+      {
+        "id": "day1",
+        "lunch_id": "r30",
+        "dinner_id": "r12",
+        "notes": [
+          "No candidates within detour <= 15.0 min; chose nearest feasible (detour ~ 85.4 min).",
+          "No candidates within detour <= 15.0 min; chose nearest feasible (detour ~ 97.7 min)."
+        ]
+      },
+      {
+        "id": "day2",
+        "lunch_id": "r23",
+        "dinner_id": "r17",
+        "notes": []
+      },
+      {
+        "id": "day3",
+        "lunch_id": "r5",
+        "dinner_id": "r24",
+        "notes": [
+          "No candidates within detour <= 15.0 min; chose nearest feasible (detour ~ 255.9 min)."
+        ]
+      }
+    ]
+  }
+}

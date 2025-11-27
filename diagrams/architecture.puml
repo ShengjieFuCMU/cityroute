@@ -1,0 +1,58 @@
+@startuml
+title CityRoute — High-Level Architecture
+
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam rectangle {
+  BorderColor #333333
+  FontName Arial
+}
+skinparam cloud {
+  BorderColor #666666
+  FontColor #333333
+}
+skinparam arrow {
+  Color #555555
+  FontColor #333333
+}
+
+rectangle "Frontend\n(React / Vite)" as FE
+rectangle "API\n(FastAPI)" as API
+
+rectangle "Services" as S {
+  rectangle "Planner" as Planner
+  rectangle "Clusterer" as Clusterer
+  rectangle "Router" as Router
+  rectangle "HotelRanker" as HotelRanker
+  rectangle "RestaurantFinder" as RestaurantFinder
+}
+
+database "Data\n(Seeds CSV · In-Memory Storage)" as DATA
+cloud "Map Tiles\n(External)\n(optional)" as MAP
+
+' --- Main flows ---
+FE -right-> API : HTTP/JSON requests
+API -left- FE : JSON responses
+
+API -down-> S : internal calls
+S -down-> DATA : read/write
+
+' --- Optional external ---
+FE .. MAP : tiles (HTTPS)\n(optional)
+
+' Arrange layout hints
+left to right direction
+API -[hidden]-> DATA
+FE -[hidden]-> S
+
+legend right
+  Boxes:
+    Frontend → API → Services → Data
+  Optional:
+    Frontend …… Map Tiles (external)
+  Arrows:
+    Solid: runtime request/response or internal call
+    Dotted: optional/external retrieval
+endlegend
+@enduml
+

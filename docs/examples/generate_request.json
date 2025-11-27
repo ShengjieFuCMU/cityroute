@@ -1,0 +1,38 @@
+{
+  "city": "Pittsburgh",
+  "days": 3,
+  "travel_mode": "drive",
+  "prefs": {
+    "detour_limit_minutes": 15,
+    "diet_tags": [
+      "veg"
+    ],
+    "price_range": "$$"
+  },
+  "pois": [
+    {
+      "id": "poi1",
+      "name": "Carnegie Museum of Art",
+      "lat": 40.4431,
+      "lon": -79.9496,
+      "rating": 4.7,
+      "review_count": 1200,
+      "must_go": true
+    },
+    {
+      "id": "poi2",
+      "name": "Point State Park",
+      "lat": 40.4414,
+      "lon": -80.0089,
+      "rating": 4.8,
+      "review_count": 980,
+      "must_go": false
+    }
+  ],
+  "locks": [
+    {
+      "type": "poi",
+      "id": "poi1"
+    }
+  ]
+}

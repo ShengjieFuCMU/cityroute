@@ -1,0 +1,8 @@
+{
+  "id": "d1",
+  "visit_ids": ["poi1", "poi2"],
+  "lunch_id": "r5",
+  "dinner_id": "r8",
+  "total_time_minutes": 380
+}
+

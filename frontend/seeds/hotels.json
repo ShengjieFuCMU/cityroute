@@ -1,0 +1,42 @@
+[
+  {
+    "id": "h1",
+    "name": "DoubleTree by Hilton Hotel & Suites Pittsburgh Downtown"
+  },
+  {
+    "id": "h2",
+    "name": "Fairmont Pittsburgh"
+  },
+  {
+    "id": "h3",
+    "name": "The Oaklander Hotel, Autograph Collection"
+  },
+  {
+    "id": "h4",
+    "name": "The Mansions On Fifth Luxury Hotel"
+  },
+  {
+    "id": "h5",
+    "name": "SpringHill Suites by Marriott Pittsburgh Bakery Square"
+  },
+  {
+    "id": "h6",
+    "name": "The Ohiopyle Suites"
+  },
+  {
+    "id": "h7",
+    "name": "DoubleTree by Hilton Hotel Pittsburgh - Cranberry"
+  },
+  {
+    "id": "h8",
+    "name": "Pittsburgh Marriott North"
+  },
+  {
+    "id": "h9",
+    "name": "Sheraton Pittsburgh Hotel at Station Square"
+  },
+  {
+    "id": "h10",
+    "name": "Hyatt Place Pittsburgh-North Shore"
+  }
+]

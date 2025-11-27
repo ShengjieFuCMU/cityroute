@@ -1,0 +1,4 @@
+==== VERSIONS ====
+Python: Python 3.8.5
+Node:   v20.19.2
+npm:    10.8.2

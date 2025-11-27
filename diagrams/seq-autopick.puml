@@ -1,0 +1,22 @@
+@startuml
+actor Traveler
+participant "UI" as UI
+participant "PlannerService" as PS
+participant "RestaurantFinder" as RF
+participant "Itinerary" as IT
+
+Traveler -> UI: Toggle Auto-Pick Meals
+UI -> PS: autoPickMeals(itinId, dayIds?)
+loop each day
+  PS -> RF: suggest(dayPlan, prefs)
+  alt candidates found
+    RF --> PS: {lunch, dinner}
+    PS -> IT: setMeals(day, lunch, dinner)
+  else no candidate
+    RF --> PS: none
+    PS -> IT: setFallback(day)  # nearest open within detour
+  end
+end
+PS --> UI: Show meals with explain/notes
+@enduml
+

@@ -1,0 +1,4 @@
+day_id,visit_ids,lunch_id,dinner_id,total_time_minutes
+day1,poi38|poi37,r30,r12,11.7
+day2,poi6|poi18|poi5|poi28|poi16|poi33|poi20|poi19|poi3|poi31|poi2|poi35|poi29|poi17|poi30|poi32|poi24|poi34|poi23|poi21|poi15|poi1|poi4|poi14|poi13|poi39|poi22|poi36|poi9|poi8|poi7|poi27|poi10|poi11|poi12,r23,r17,211.4
+day3,poi26|poi25,r5,r24,11.1

@@ -1,0 +1,40 @@
+id,name,lat,lon,rating,review_count,must_go
+poi1,Carnegie Museum of Art,40.4431,-79.9496,4.7,1875,FALSE
+poi2,Point State Park,40.4418,-80.0078,4.7,9383,TRUE
+poi3,The Andy Warhol Museum,40.4507,-80.0016,4.6,5552,FALSE
+poi4,Phipps Conservatory and Botanical Gardens,40.4408,-79.9484,4.8,10081,TRUE
+poi5,National Aviary,40.4552,-80.009,4.7,7275,TRUE
+poi6,Helltown Brewing - Strip District,40.4508,-79.9859,4.5,319,FALSE
+poi7,Pittsburgh Zoo & Aquarium,40.487,-79.9213,4.5,17267,FALSE
+poi8,Highland Park,40.4796,-79.9155,4.6,4558,FALSE
+poi9,Frick Park,40.4354,-79.9029,4.8,4032,FALSE
+poi10,North Park,40.613,-80.0186,4.7,5092,FALSE
+poi11,Soergel Orchards,40.6271,-80.0926,4.7,2471,FALSE
+poi12,Raccoon Creek State Park,40.5793,-80.3787,4.7,3317,FALSE
+poi13,Schenley Park,40.4358,-79.937,4.7,8548,TRUE
+poi14,Carnegie Mellon University,40.4436,-79.9429,4.7,625,TRUE
+poi15,Cathedral of Learning,40.4446,-79.9533,4.8,1406,TRUE
+poi16,Duquesne Incline,40.44,-80.0175,4.7,735,TRUE
+poi17,Grandview Overlook,40.435,-80.0114,4.8,5415,TRUE
+poi18,Allegheny Commons Park North Park,40.455,-80.0067,4.3,440,TRUE
+poi19,PNC Park,40.4477,-80.0071,4.7,21634,FALSE
+poi20,Acrisure Stadium,40.447,-80.0157,4.7,14111,FALSE
+poi21,PPG Paints Arena,40.4395,-79.9897,4.7,15657,FALSE
+poi22,Kennywood,40.3868,-79.8617,4.3,17475,FALSE
+poi23,Senator John Heinz History Center,40.4469,-79.992,4.7,3033,FALSE
+poi24,Market Square,40.4408,-80.0025,4.6,8198,FALSE
+poi25,Ohiopyle State Park,39.8688,-79.4939,4.8,9344,FALSE
+poi26,Fallingwater,39.9173,-79.4659,4.8,6484,FALSE
+poi27,Ross Park Mall,40.5436,-80.008,4.4,7445,FALSE
+poi28,West End Overlook Park,40.4466,-80.0339,4.8,1698,FALSE
+poi29,Highmark Stadium,40.4367,-80.0098,4.6,1093,FALSE
+poi30,Station Square,40.4332,-80.0046,4.3,5005,FALSE
+poi31,Three Sisters (Bridges),40.4463,-80.0014,4.7,10,FALSE
+poi32,Smithfield Street Bridge,40.4349,-80.0021,4.6,117,FALSE
+poi33,Kamin Science Center,40.4459,-80.0181,4.5,2114,FALSE
+poi34,Benedum Center for the Performing Arts,40.4432,-80,4.8,5615,FALSE
+poi35,Fort Pitt Museum,40.441,-80.0094,4.6,961,FALSE
+poi36,Boyce Park,40.4697,-79.7441,4.5,1224,FALSE
+poi37,Moraine State Park,40.9392,-80.0978,4.7,897,FALSE
+poi38,McConnells Mill State Park,40.9525,-80.1698,4.8,3240,FALSE
+poi39,Page's,40.4113,-79.9558,4.8,3100,FALSE

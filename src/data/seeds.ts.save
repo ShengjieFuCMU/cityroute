@@ -1,0 +1,18 @@
+// frontend/src/data/seeds.ts
+
+import pois from '../../seeds/pois.json';
+import hotels from '../../seeds/hotels.json';
+import restaurants from '../../seeds/restaurants.json';
+
+// Minimal shape of a row in the JSON
+type SeedRow = { id: string | number; name?: string | null };
+
+function buildMap(rows: SeedRow[]): Record<string, string | undefined> {
+  return Object.fromEntries(
+    rows.map(r => [String(r.id), r.name ?? undefined])
+  );
+}
+
+export const poiName   = buildMap(pois as SeedRow[]);
+export const hotelName = buildMap(hotels as SeedRow[]);
+export const restName  = buildMap(restaurants as SeedRow[]);
