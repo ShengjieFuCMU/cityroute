@@ -237,5 +237,4 @@ From the repo root:
 ## 12) License / Contact
 
 - Course project — educational use only.
-- Contact: Your Name · your.email@example.com
 
