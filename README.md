@@ -1,6 +1,6 @@
 # CityRoute v1
 
-CityRoute is a **single-city** trip planner (Pittsburgh for the midterm) that:
+CityRoute is a **single-city** trip planner (Pittsburgh) that:
 
 - Clusters POIs into **3–7× day plans**,
 - Orders visits per day with a fast route (Nearest-Neighbor + 2-opt),
@@ -218,23 +218,7 @@ Coordinate sanity (Pittsburgh):
 
 ---
 
-## 10) Clean Zip for Submission (optional)
-
-From the repo root:
-
-    # Optional: tag this version
-    git add .
-    git commit -m "CityRoute v1 (midterm demo)"
-    git tag v1.0.0
-
-    # Create zip without node_modules / venv
-    zip -r CityRoute_v1_midterm.zip \
-        backend frontend docs diagrams data \
-        -x "frontend/node_modules/*" -x "backend/.venv/*" -x "*/.DS_Store"
-
----
-
-## 11) Next Steps (v2 Ideas)
+## 10) Next Steps
 
 - Pick POIs
 - Introduce per-stop durations feature
