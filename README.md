@@ -1,4 +1,4 @@
-# CityRoute v1 – Midterm Demo
+# CityRoute v1
 
 CityRoute is a **single-city** trip planner (Pittsburgh for the midterm) that:
 
