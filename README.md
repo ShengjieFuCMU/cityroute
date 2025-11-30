@@ -1,6 +1,6 @@
 # CityRoute v1 – Midterm Demo
 
-CityRoute is a **single-city** trip planner (Pittsburgh)  that:
+CityRoute is a **single-city** trip planner (Pittsburgh for the midterm) that:
 
 - Clusters POIs into **3–7× day plans**,
 - Orders visits per day with a fast route (Nearest-Neighbor + 2-opt),
@@ -26,23 +26,28 @@ CityRoute/
 
     ├─ backend/
     │  ├─ app.py                 # FastAPI endpoints
+    │  ├─ data/                  # seed CSVs (POIs, Hotels, Restaurants)
+    │  │  ├─ pois.csv
+    │  │  ├─ hotels.csv
+    │  │  └─ restaurants.csv
     │  ├─ services/              # planner, clusterer, router, hotel_ranker, restaurants
     │  ├─ storage/               # in-memory stores
     │  ├─ utils/                 # geo/time helpers
-    │  ├─ requirements.txt
-    ├─ data/
-    │  └─ seeds/                 # seed CSVs (POIs, Hotels, Restaurants)
-    │     ├─ pois.csv
-    │     ├─ hotels.csv
-    │     └─ restaurants.csv
+    │  ├─ scripts/               # demo_run.py etc.
+    │  ├─ tests/                 # pytest suite
+    │  ├─ pytest.ini
+    │  └─ requirements.txt
     ├─ frontend/
     │  ├─ src/
     │  │  ├─ App.jsx
     │  │  ├─ api.js
     │  │  ├─ main.jsx
+    │  │  ├─ App.css
     │  │  └─ index.css
-    │  ├─ .env.example           # VITE_API_URL=http://127.0.0.1:8000
-    │  └─ package.json
+    │  ├─ .env                   # VITE_API_URL=http://127.0.0.1:8000
+    │  ├─ index.html
+    │  ├─ package.json
+    │  └─ vite.config.js
     ├─ docs/                     # SRS, diagrams, examples, test plan, slides
     ├─ diagrams/                 # PlantUML + exported SVGs
     ├─ README.md                 # this file
@@ -52,12 +57,12 @@ CityRoute/
 
 ## 2) What v1 Delivers (Scope)
 
-- **City:** Pittsburgh
-- **Days:** 3–7 (validated)
-- **≤ 40 POIs** per itinerary (guardrail)
-- **IDs-only API** (matches SRS): `Itinerary` + `DayPlan` with `visit_ids`, `lunch_id`, `dinner_id`, `hotel_id`
-- **Hotel suggestion:** ranked by proximity to day centroids + rating + log(reviews)
-- **Restaurant auto-pick:** open windows, diet/price filters, detour limit; **no repeats across days** if avoidable
+- **City:** Pittsburgh  
+- **Days:** 3–7 (validated)  
+- **≤ 40 POIs** per itinerary (guardrail)  
+- **IDs-only API** (matches SRS): `Itinerary` + `DayPlan` with `visit_ids`, `lunch_id`, `dinner_id`, `hotel_id`  
+- **Hotel suggestion:** ranked by proximity to day centroids + rating + log(reviews)  
+- **Restaurant auto-pick:** open windows, diet/price filters, detour limit; **no repeats across days** if avoidable  
 - **Exports:** JSON (structured), CSV (1 row per day)
 
 > `total_time_minutes` per day in v1 = **estimated travel time only** between POIs (straight-line distance → minutes); no visiting duration yet.
@@ -79,17 +84,22 @@ CityRoute/
     pip install -r requirements.txt
     uvicorn app:app --reload    # http://127.0.0.1:8000
 
-- Swagger UI: http://127.0.0.1:8000/docs
+- Swagger UI: http://127.0.0.1:8000/docs  
 
 ### 3.2 Frontend (Vite + React)
 
     cd frontend
     npm install
 
-    # Set backend URL (if not present):
-    cp .env.example .env        # contains: VITE_API_URL=http://127.0.0.1:8000
+This repo already includes `frontend/.env` with:
 
-    npm run dev                 # http://localhost:5173
+    VITE_API_URL=http://127.0.0.1:8000
+
+If `.env` is missing, create it with that line.
+
+Then start the dev server:
+
+    npm run dev    # http://localhost:5173
 
 ---
 
@@ -161,15 +171,15 @@ With the server running (`uvicorn app:app --reload`):
 
 ## 7) Seed CSV Formats (Expected Columns)
 
-**data/seeds/pois.csv**
+**backend/data/pois.csv**
 
     id,name,lat,lon,rating,review_count,must_go
 
-**data/seeds/hotels.csv**
+**backend/data/hotels.csv**
 
     id,name,lat,lon,rating,review_count,price_level
 
-**data/seeds/restaurants.csv**
+**backend/data/restaurants.csv**
 
     id,name,lat,lon,rating,review_count,price_level,diet_tags,open_lunch,open_dinner
 
@@ -202,8 +212,8 @@ Coordinate sanity (Pittsburgh):
 
   Restart `npm run dev` after changes.
 
-- **404 itinerary not found** → backend restarted; click **Generate** again.
-- **Huge detour notes** → try `detour_limit_min` 20–30; verify restaurant coordinates.
+- **404 itinerary not found** → backend restarted; click **Generate** again.  
+- **Huge detour notes** → try `detour_limit_min` 20–30; verify restaurant coordinates.  
 - **CSV not downloading in browser** → in v1, server returns `csv_text`; the frontend saves it as a file.
 
 ---
@@ -227,7 +237,7 @@ From the repo root:
 ## 11) Next Steps (v2 Ideas)
 
 - Pick POIs
-- Introduce per‑stop durations feature
+- Introduce per-stop durations feature
 - Restaurant radius pre-filter around day centroid
 - Map view (Leaflet)
 - Optional DB (Postgres/PostGIS) and persistence
@@ -236,5 +246,5 @@ From the repo root:
 
 ## 12) License / Contact
 
-- Course project — educational use only.
+- Course project — educational use only.  
 
